@@ -1,0 +1,56 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: minMax(100px, 1fr);
+  grid-template-areas:
+  "footer"
+    "handwriting"
+    "animation"
+    "menu"
+    
+  ;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.textGrid {
+  grid-area: handwriting;
+  // transform: translate(-33%, 0);
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  width: 90%;
+  z-index: 4;
+}
+
+#animation_container {
+  grid-area: animation;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.menu {
+  grid-area: menu;
+  z-index: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; 
+}
+
+.foot {
+  grid-area: footer;
+  display: flex;
+  flex-flow: column nowrap;
+align-items: center;
+  margin: 1em;
+  padding: 10px;
+  z-index: 5;
+background-color: $secondary-color;
+border-radius: 5px;
+}

@@ -1,0 +1,1417 @@
+/* ============================================= */
+/*              Variables                     */
+/* ============================================= */
+/*              Typography Variables             */
+/* ============================================= */
+/*              Others                            */
+/* ============================================= */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+* {
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: radial-gradient(closest-corner at 10%, #010003, #0d0531 1px);
+  font-family: "industry-inc-3D", sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: rgba(233, 85, 233, 0.8);
+  font-family: montana-rough;
+  font-weight: 700;
+  font-size: 400%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.detailedModalTitle {
+  text-align: center;
+  background-color: rgba(221, 221, 221, 0.6);
+  font-family: reross-quadratic, montana-rough, monospace;
+  font-weight: 700;
+  font-size: 300%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.title-bg {
+  text-align: center;
+  margin: 0 auto;
+  color: whitesmoke;
+  background-color: rgba(149, 148, 170, 0.6);
+  border-radius: 5px;
+  font-family: reross-quadratic, monospace;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.signature {
+  font-family: "Liana";
+  font-size: 1rem;
+  color: #ca8d8d;
+  margin-bottom: 0.2em;
+}
+
+.copyright {
+  font-family: reross-quadratic, monospace;
+  font-size: 50%;
+  color: #ca8d8d;
+}
+
+.email {
+  display: block;
+  font-family: reross-quadratic, monospace;
+  color: black;
+  font-weight: bold;
+  background-color: whitesmoke;
+  padding: 5px;
+  padding-left: 4em;
+  padding-right: 4em;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+.grid {
+  display: grid;
+  grid-template-columns: minMax(100px, 1fr);
+  grid-template-areas: "footer" "handwriting" "animation" "menu";
+  place-items: center;
+  margin: 0 auto;
+}
+
+.textGrid {
+  grid-area: handwriting;
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  width: 90%;
+  z-index: 4;
+}
+
+#animation_container {
+  grid-area: animation;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.menu {
+  grid-area: menu;
+  z-index: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.foot {
+  grid-area: footer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 1em;
+  padding: 10px;
+  z-index: 5;
+  background-color: rgba(149, 148, 170, 0.6);
+  border-radius: 5px;
+}
+
+/* ============================================= */
+/*              Canvas                            */
+/* ============================================= */
+#_preload_div_ {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
+
+#canvas {
+  border-radius: 15% 15% 1% 1%;
+  box-shadow: #010003 0 -5em 15em 10em, #050050 8em 2em 8em 8em;
+}
+
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 90%;
+  margin: 10% auto auto;
+  position: relative;
+  text-align: center;
+  background: #9594aa;
+  border-radius: 5px;
+  padding: 30px 20px;
+  opacity: 0.99;
+  z-index: 99;
+}
+
+.modalInner {
+  margin: 0.5rem 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalProjectContent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.modalProjectIcon {
+  padding: 0.5rem;
+}
+
+.modalProjectIconHover {
+  transition: 0.3s;
+}
+
+.modalProjectIconHover:hover {
+  border: whitesmoke 2px solid;
+  border-style: inset;
+  border-radius: 5px;
+}
+
+.shortDescription {
+  font-family: "reross-quadratic", monospace;
+  color: whitesmoke;
+}
+
+.modalIcon {
+  height: 64px;
+  width: 64px;
+  padding: 10px;
+  stroke: whitesmoke;
+  stroke-width: 2px;
+}
+
+#getshotIcon {
+  stroke: orange;
+}
+
+#dashboardIcon {
+  stroke: yellow;
+}
+
+#galleryIcon {
+  stroke: green;
+}
+
+#formsIcon {
+  stroke: blue;
+}
+
+#gameIcon {
+  stroke: red;
+}
+
+#firstwebsiteIcon {
+  stroke: violet;
+}
+
+.modalIcon:hover {
+  stroke: whitesmoke;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.modal-previous {
+  position: absolute;
+  left: 15px;
+  top: 20%;
+}
+
+.modal-next {
+  position: absolute;
+  right: 15px;
+  top: 20%;
+}
+
+.extendedDescription {
+  white-space: pre-wrap;
+  text-align: center;
+  margin: 0.5rem auto;
+  color: whitesmoke;
+  font-family: reross-quadratic;
+  font-weight: 400;
+  padding: 0.5rem;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
+.toolTipContainer {
+  position: absolute;
+  width: 95%;
+  min-height: 100px;
+  padding: 0.5rem;
+}
+
+.toolTipContainer .toolTipTextPages {
+  left: 0;
+}
+
+.toolTipContainer .toolTipTextRepo {
+  right: 0;
+}
+
+.extendedModal {
+  width: 95%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.extendedModal:hover .toolTipTextPages,
+.extendedModal:hover .toolTipTextRepo {
+  visibility: visible;
+}
+
+.toolTipTextPages,
+.toolTipTextRepo {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  font-family: reross-quadratic, monospace;
+  padding: 2px;
+  background-color: rgba(149, 148, 170, 0.6);
+  border-radius: 5px;
+}
+
+.toolTipTextPages:hover,
+.toolTipTextRepo:hover {
+  background-color: whitesmoke;
+}
+
+.lighthouseContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: reross-quadratic, monospace;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.lighthouseGraphicContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  color: whitesmoke;
+  font-family: reross-quadratic, monospace;
+  margin: 1rem;
+}
+
+.lighthouseText {
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: rgba(221, 221, 221, 0.6);
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.score {
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 5px;
+}
+
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+.searchBox {
+  font-family: reross-quadratic, monospace;
+  width: 66%;
+  margin: 1rem;
+  background-color: rgba(221, 221, 221, 0.6);
+  outline-style: none;
+  border: none;
+  border-radius: 5px;
+}
+.searchBox:hover, .searchBox:focus {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid black;
+  cursor: inherit;
+}
+
+::placeholder {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 50%;
+}
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+#button_toggle {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  z-index: 99;
+}
+
+button {
+  cursor: pointer;
+  font-family: monospace;
+  background-color: rgba(221, 221, 221, 0.6);
+  color: white;
+  outline-style: none;
+}
+
+button:hover {
+  background-color: rgba(149, 148, 170, 0.6);
+  color: whitesmoke;
+}
+
+#t1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 210.702;
+  stroke-dashoffset: 210.702;
+  animation: animate 0.2s 1.5s linear forwards, n1Fill 0.4s 2s linear forwards;
+}
+
+@keyframes animate {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes n1Fill {
+  0% {
+    fill: #e9e9e9;
+  }
+  25% {
+    fill: #f0afaf;
+  }
+  50% {
+    fill: #ee5353;
+  }
+  75% {
+    fill: #f32424;
+  }
+  100% {
+    fill: red;
+  }
+}
+#i1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 143.841;
+  stroke-dashoffset: 143.841;
+  animation: animate 0.2s 1.7s linear forwards, o1Fill 0.4s 2.4s linear forwards;
+}
+
+@keyframes o1Fill {
+  0% {
+    fill: #fafaf9;
+  }
+  25% {
+    fill: #f7e8cd;
+  }
+  50% {
+    fill: #f5c773;
+  }
+  75% {
+    fill: #fab027;
+  }
+  100% {
+    fill: orange;
+  }
+}
+#r1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 303.792;
+  stroke-dashoffset: 303.792;
+  animation: animate 0.2s 1.9s linear forwards, t1Fill 0.4s 2.8s linear forwards;
+}
+
+@keyframes t1Fill {
+  0% {
+    fill: #fafaf7;
+  }
+  25% {
+    fill: #f7f7c4;
+  }
+  50% {
+    fill: #fafa76;
+  }
+  75% {
+    fill: #fafa2e;
+  }
+  100% {
+    fill: yellow;
+  }
+}
+#e1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 301.573;
+  stroke-dashoffset: 301.573;
+  animation: animate 0.2s 2.1s linear forwards, e1Fill 0.4s 3.2s linear forwards;
+}
+
+@keyframes e1Fill {
+  0% {
+    fill: #858585;
+  }
+  25% {
+    fill: #738f73;
+  }
+  50% {
+    fill: #428842;
+  }
+  75% {
+    fill: #168516;
+  }
+  100% {
+    fill: green;
+  }
+}
+#d1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 285.544;
+  stroke-dashoffset: 285.544;
+  animation: animate 0.2s 2.3s linear forwards, v1Fill 0.4s 3.6s linear forwards;
+}
+
+@keyframes v1Fill {
+  0% {
+    fill: #f3f3f7;
+  }
+  25% {
+    fill: #c2c2f5;
+  }
+  50% {
+    fill: #7676f8;
+  }
+  75% {
+    fill: #3d3dfa;
+  }
+  100% {
+    fill: blue;
+  }
+}
+#o1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 280.957;
+  stroke-dashoffset: 280.957;
+  animation: animate 0.2s 2.5s linear forwards, e2Fill 0.4s 4s linear forwards;
+}
+
+@keyframes e2Fill {
+  0% {
+    fill: #89898a;
+  }
+  25% {
+    fill: #82768b;
+  }
+  50% {
+    fill: #694385;
+  }
+  75% {
+    fill: #5b1c88;
+  }
+  100% {
+    fill: indigo;
+  }
+}
+#f1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 241.739;
+  stroke-dashoffset: 241.739;
+  animation: animate 0.2s 2.7s linear forwards, r1Fill 0.4s 4.4s linear forwards;
+}
+
+@keyframes r1Fill {
+  0% {
+    fill: #f7f4f7;
+  }
+  25% {
+    fill: #f7c3f7;
+  }
+  50% {
+    fill: violet;
+  }
+  75% {
+    fill: #f141f1;
+  }
+  100% {
+    fill: #f50bf5;
+  }
+}
+#f2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 241.739;
+  stroke-dashoffset: 241.739;
+  animation: animate 0.2s 2.9s linear forwards, n1Fill 0.4s 4.8s linear forwards;
+}
+
+#o2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 280.957;
+  stroke-dashoffset: 280.957;
+  animation: animate 0.2s 3.1s linear forwards, o1Fill 0.4s 5.3s linear forwards;
+}
+
+@keyframes t2Fill {
+  100% {
+    fill: orange;
+  }
+}
+#l1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 200.172;
+  stroke-dashoffset: 200.172;
+  animation: animate 0.2s 3.3s linear forwards, t1Fill 0.4s 5.7s linear forwards;
+}
+
+#l2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 200.172;
+  stroke-dashoffset: 200.172;
+  animation: animate 0.2s 3.5s linear forwards, e1Fill 0.4s 6.1s linear forwards;
+}
+
+#o3 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 280.957;
+  stroke-dashoffset: 280.957;
+  animation: animate 0.2s 3.7s linear forwards, v1Fill 0.4s 6.5s linear forwards;
+}
+
+#w1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 424.679;
+  stroke-dashoffset: 424.679;
+  animation: animate 0.2s 3.9s linear forwards, e2Fill 0.4s 6.9s linear forwards;
+}
+
+#i2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 143.841;
+  stroke-dashoffset: 143.841;
+  animation: animate 0.2s 4.1s linear forwards, r1Fill 0.4s 7.3s linear forwards;
+}
+
+#n1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 342.805;
+  stroke-dashoffset: 342.805;
+  animation: animate 0.2s 4.3s linear forwards, n1Fill 0.4s 7.7s linear forwards;
+}
+
+#g1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 330.59;
+  stroke-dashoffset: 330.59;
+  animation: animate 0.2s 4.5s linear forwards, o1Fill 0.4s 8.1s linear forwards;
+}
+
+#t2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 210.721;
+  stroke-dashoffset: 210.721;
+  animation: animate 0.2s 4.7s linear forwards, t1Fill 0.4s 8.5s linear forwards;
+}
+
+#h1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 310.014;
+  stroke-dashoffset: 310.014;
+  animation: animate 0.2s 4.9s linear forwards, e1Fill 0.4s 8.9s linear forwards;
+}
+
+#e2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 301.568;
+  stroke-dashoffset: 301.568;
+  animation: animate 0.2s 5.1s linear forwards, v1Fill 0.4s 9.3s linear forwards;
+}
+
+#h2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 310.014;
+  stroke-dashoffset: 310.014;
+  animation: animate 0.2s 5.3s linear forwards, e2Fill 0.4s 9.7s linear forwards;
+}
+
+#e3 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 301.568;
+  stroke-dashoffset: 301.568;
+  animation: animate 0.2s 5.5s linear forwards, r1Fill 0.4s 10.1s linear forwards;
+}
+
+#r2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 303.862;
+  stroke-dashoffset: 303.862;
+  animation: animate 0.2s 5.7s linear forwards, n1Fill 0.4s 10.5s linear forwards;
+}
+
+#d2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 285.519;
+  stroke-dashoffset: 285.519;
+  animation: animate 0.2s 5.9s linear forwards, o1Fill 0.4s 10.9s linear forwards;
+}
+
+#qq {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 250.863;
+  stroke-dashoffset: 250.863;
+  animation: animate 0.2s 6.1s linear forwards, t1Fill 0.4s 11.2s linear forwards;
+}
+
+#r3 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 303.862;
+  stroke-dashoffset: 303.862;
+  animation: animate 0.2s 2s linear forwards, n1Fill 0.4s 2s linear forwards;
+}
+
+@keyframes n1Fill {
+  0% {
+    fill: #e9e9e9;
+  }
+  25% {
+    fill: #f0afaf;
+  }
+  50% {
+    fill: #ee5353;
+  }
+  75% {
+    fill: #f32424;
+  }
+  100% {
+    fill: red;
+  }
+}
+#u1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 279.788;
+  stroke-dashoffset: 279.788;
+  animation: animate 0.2s 2.2s linear forwards, o1Fill 0.4s 2.4s linear forwards;
+}
+
+@keyframes o1Fill {
+  0% {
+    fill: #fafaf9;
+  }
+  25% {
+    fill: #f7e8cd;
+  }
+  50% {
+    fill: #f5c773;
+  }
+  75% {
+    fill: #fab027;
+  }
+  100% {
+    fill: orange;
+  }
+}
+#n2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 342.773;
+  stroke-dashoffset: 342.773;
+  animation: animate 0.2s 2.4s linear forwards, t1Fill 0.4s 2.8s linear forwards;
+}
+
+@keyframes t1Fill {
+  0% {
+    fill: #fafaf7;
+  }
+  25% {
+    fill: #f7f7c4;
+  }
+  50% {
+    fill: #fafa76;
+  }
+  75% {
+    fill: #fafa2e;
+  }
+  100% {
+    fill: yellow;
+  }
+}
+#w2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 424.673;
+  stroke-dashoffset: 424.673;
+  animation: animate 0.2s 2.6s linear forwards, e1Fill 0.4s 3.2s linear forwards;
+}
+
+@keyframes e1Fill {
+  0% {
+    fill: #858585;
+  }
+  25% {
+    fill: #738f73;
+  }
+  50% {
+    fill: #428842;
+  }
+  75% {
+    fill: #168516;
+  }
+  100% {
+    fill: green;
+  }
+}
+#i3 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 143.881;
+  stroke-dashoffset: 143.881;
+  animation: animate 0.2s 2.8s linear forwards, v1Fill 0.4s 3.6s linear forwards;
+}
+
+@keyframes v1Fill {
+  0% {
+    fill: #f3f3f7;
+  }
+  25% {
+    fill: #c2c2f5;
+  }
+  50% {
+    fill: #7676f8;
+  }
+  75% {
+    fill: #3d3dfa;
+  }
+  100% {
+    fill: blue;
+  }
+}
+#t3 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 210.702;
+  stroke-dashoffset: 210.702;
+  animation: animate 0.2s 3s linear forwards, e2Fill 0.4s 4s linear forwards;
+}
+
+@keyframes e2Fill {
+  0% {
+    fill: #89898a;
+  }
+  25% {
+    fill: #82768b;
+  }
+  50% {
+    fill: #694385;
+  }
+  75% {
+    fill: #5b1c88;
+  }
+  100% {
+    fill: indigo;
+  }
+}
+#h3 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 309.862;
+  stroke-dashoffset: 309.862;
+  animation: animate 0.2s 3.2s linear forwards, r1Fill 0.4s 4.4s linear forwards;
+}
+
+@keyframes r1Fill {
+  0% {
+    fill: #f7f4f7;
+  }
+  25% {
+    fill: #f7c3f7;
+  }
+  50% {
+    fill: violet;
+  }
+  75% {
+    fill: #f141f1;
+  }
+  100% {
+    fill: #f50bf5;
+  }
+}
+#b1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 309.951;
+  stroke-dashoffset: 309.951;
+  animation: animate 0.2s 3.4s linear forwards, n1Fill 0.4s 4.8s linear forwards;
+}
+
+#a1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 298.256;
+  stroke-dashoffset: 298.256;
+  animation: animate 0.2s 3.6s linear forwards, o1Fill 0.4s 5.2s linear forwards;
+}
+
+@keyframes t2Fill {
+  100% {
+    fill: orange;
+  }
+}
+#a2 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 298.256;
+  stroke-dashoffset: 298.256;
+  animation: animate 0.2s 3.8s linear forwards, t1Fill 0.4s 5.6s linear forwards;
+}
+
+#c1 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 286.856;
+  stroke-dashoffset: 286.856;
+  animation: animate 0.2s 4s linear forwards, e1Fill 0.4s 6s linear forwards;
+}
+
+#o4 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 280.9;
+  stroke-dashoffset: 280.9;
+  animation: animate 0.2s 4.2s linear forwards, v1Fill 0.4s 6.4s linear forwards;
+}
+
+#d3 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 285.536;
+  stroke-dashoffset: 285.536;
+  animation: animate 0.2s 4.4s linear forwards, e2Fill 0.4s 6.8s linear forwards;
+}
+
+#e4 {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 301.631;
+  stroke-dashoffset: 301.631;
+  animation: animate 0.2s 4.6s linear forwards, r1Fill 0.4s 7.2s linear forwards;
+}
+
+#xx {
+  stroke: whitesmoke;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 161.091;
+  stroke-dashoffset: 161.091;
+  animation: animate 0.2s 4.8s linear forwards, n1Fill 0.4s 7.6s linear forwards;
+}
+
+@keyframes blink {
+  0% {
+    fill: none;
+  }
+  100% {
+    fill: #dd46bc;
+  }
+}
+.block {
+  width: 4rem;
+  height: 4rem;
+  stroke: none;
+  fill: none;
+  animation: blink 0.4s;
+  animation-iteration-count: 4;
+}
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: 768px) {
+  ::placeholder {
+    font-size: 100%;
+  }
+
+  .modal {
+    width: 80%;
+  }
+
+  .modalInner {
+    margin: 1rem 2rem;
+  }
+
+  .modalProjectIcon {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .modalIcon {
+    height: 96px;
+    width: 96px;
+    padding: 10px;
+    stroke: whitesmoke;
+    stroke-width: 2px;
+  }
+
+  .extendedDescription {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .toolTipContainer {
+    width: 90%;
+  }
+
+  .extendedModal {
+    width: 90%;
+  }
+
+  .score {
+    font-size: 150%;
+    padding: 25px;
+    margin: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

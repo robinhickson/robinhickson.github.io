@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>| BaaCode Home |</title>
+    <meta name="description" content="Portfolio showcase Robin Hickson rkhickson@gmail.com https://www.writecodesign.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qrn6vpk.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gmz4zqm.css">
+
+    <script src="https://kit.fontawesome.com/fd87de730e.js" crossorigin="anonymous"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="JS/baa_code_v12_HTML5_Canvas.js"></script>
+    <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp = AdobeAn.getComposition("E4FE8167CD6B0B42B67937A382A0DD78");
+            var lib = comp.getLibrary();
+            createjs.MotionGuidePlugin.install();
+            var loader = new createjs.LoadQueue(false);
+            loader.addEventListener("fileload", function (evt) {
+                handleFileLoad(evt, comp)
+            });
+            loader.addEventListener("complete", function (evt) {
+                handleComplete(evt, comp)
+            });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+
+        function handleFileLoad(evt, comp) {
+            var images = comp.getImages();
+            if (evt && (evt.item.type == "image")) {
+                images[evt.item.id] = evt.result;
+            }
+        }
+
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({
+                    "images": [queue.getResult(ssMetadata[i].name)],
+                    "frames": ssMetadata[i].frames
+                })
+            }
+            var preloaderDiv = document.getElementById("_preload_div_");
+            preloaderDiv.style.display = 'none';
+            canvas.style.display = 'block';
+            exportRoot = new lib.baa_code_v12_HTML5Canvas();
+            stage = new lib.Stage(canvas);
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(true, 'both', true, 1, [canvas, preloaderDiv, anim_container,
+                dom_overlay_container
+            ]);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    </script>
+
+</head>
+
+<body onload="init();">
+    <div id='_preload_div_'> <span style='display: inline-block; height: 100%; vertical-align: middle;'></span> <img
+            src="media/_preloader.gif" alt="preloader gif" style='vertical-align: middle; max-height: 100%' /></div>
+    <div id="sounds">
+
+        <audio id="player" src="media/Sheep-Lamp-Baa.mp3" muted></audio>
+
+    </div>
+    <button type="button" id="button_toggle" onclick="muteUnmute('player'), chngImg()">
+        <img src="media/Mute_ON.svg" id="toggle_mute" alt="button mute on">
+    </button>
+    <div class="grid">
+
+        <div id="animation_container" onmouseenter="PlaySound('player')"
+            onmouseleave="PlaySound('player')">
+            <canvas id="canvas"></canvas>
+            <div id="dom_overlay_container"
+                style="pointer-events:none; overflow:hidden; width:1347px; height:807px; display: none;">
+            </div>
+        </div>
+
+        <div class="menu">
+            <h1 class="title">BAACODE</h1>
+            <p class="title-bg">designed for fun</p>
+        </div>
+        <div class="textGrid">
+
+        </div>
+        <footer class="foot">
+            <div class="copyright"><a class="email" href="mailto:rkhickson@gmail.com" target="_blank" rel="noreferrer">email your project request</a></div>
+            <div class="copyright">
+                
+                <span >Web Design by&nbsp;<i
+                        class="fas fa-copyright"></i>&nbsp;&nbsp;</span><a class="signature" href="https://www.writecodesign.com"
+                    target="_blank" rel="noreferrer">writecodesign</a>
+            </div>
+        </footer>
+    </div>
+    <div class="overlay hidden">
+        <div class="modal">
+            <button class="modal-close">X</button>
+            <button class="modal-previous">&lt;</button>
+            <div class="modalInner"></div>
+            <button class="modal-next">&gt;</button>
+        </div>
+    </div>
+
+    <script src="JS/app.js" ></script>
+</body>
+
+</html>
